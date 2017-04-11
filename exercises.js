@@ -49,6 +49,13 @@ console.log(canVote(5));
  * Console.log your result.
 */
 
+function login(password){
+	if(password = "test1234"){
+		return "Login Success!";
+	}
+};
+
+console.log(login("test1234"));
 
 /*
  * #3
@@ -63,7 +70,15 @@ console.log(canVote(5));
  * Console.log your result.
 */
 
+function isGreaterThan(first, second){
+	if(first > second){
+		return true;
+	}else{
+		return false;
+	}
+}
 
+console.log(isGreaterThan(4, 6));
 
 /*
  * #4
@@ -76,7 +91,13 @@ console.log(canVote(5));
  * The function will return true if the value passed into the function is "true".
  * Console.log your result.
 */
+function mustBeTrue (boo){
+	if (boo === true){
+		return true
+	}
+}
 
+console.log(mustBeTrue(true));
 
 
 /*
@@ -91,7 +112,13 @@ console.log(canVote(5));
  * Console.log your result.
 */
 
+function bigBird(word){
+	if(word.length = 3){
+		return "Word to Big Bird!"
+	}
+}
 
+console.log(bigBird("saying"));
 
 /*
  * #6
@@ -106,6 +133,15 @@ console.log(canVote(5));
  * Console.log your result.
 */
 
+function isEqual(first, second){
+	if (first === second){
+    return "You look mahvelous!"
+  }else{
+    return "I don't know who you are anymore."
+
+  }
+}
+console.log(isEqual(3,4));
 
 /*
  * #7
@@ -119,6 +155,15 @@ console.log(canVote(5));
  * If the strings are not equal, the function will return the message "Opposites do attract." Otherwise, return the message: "Cause it's like you're my mirror." 
  * Console.log your result.
 */
+function notEqual(first, second){
+  if(first !== second){
+    return "Opposites do attract"
+  }else{return "Cause it's like you're my mirror."
+
+  }
+}
+console.log(notEqual(3,3));
+
 
 
 /*
@@ -132,6 +177,15 @@ console.log(canVote(5));
  * The function will return true if the number passed into the function is greater than 100, otherwise it will return false.
  * Console.log your result.
 */ 
+function spareChange(money){
+  if(money > 100){
+    return true
+  }else{
+    return false
+  }
+}
+
+console.log(spareChange(123));
 
 
 
