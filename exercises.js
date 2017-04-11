@@ -94,7 +94,9 @@ console.log(isGreaterThan(4, 6));
 function mustBeTrue (boo){
 	if (boo === true){
 		return true
-	}
+	}else{
+    return false
+  }
 }
 
 console.log(mustBeTrue(true));
@@ -113,9 +115,11 @@ console.log(mustBeTrue(true));
 */
 
 function bigBird(word){
-	if(word.length = 3){
+	if(word.length === 3){
 		return "Word to Big Bird!"
-	}
+	}else{
+    return false
+  }
 }
 
 console.log(bigBird("saying"));
@@ -203,6 +207,16 @@ console.log(spareChange(123));
  * Console.log your result.
 */ 
 
+function dirty30(one, two, three){
+  if(one + two + three > 30){
+    return true
+  }else{
+    return false
+  }
+}
+
+console.log(dirty30(13, 16, 10));
+
 
 
 /*
@@ -217,8 +231,14 @@ console.log(spareChange(123));
  * Console.log your result.
 */ 
 
-
-
+function evenStevens(num){
+  if(num%2 === 0 ){
+    return true
+  }else{
+    return false
+  }
+}
+console.log(evenStevens(15));
 
 /*
  * #11
@@ -232,7 +252,15 @@ console.log(spareChange(123));
  * If BOTH values are 21 or over, the function will return the message: "Welcome to the Legends Lounge." Otherwise, it will return the message: "Chuck E Cheese is across the street."
  * Console.log your result.
 */ 
+function daClub(cover, age){
+  if(cover>= 21 && age >= 21){
+    return "Welcome to the Legends Lounge."
+  }else{
+    return "Chuck E Cheese is across the street."
+  }
+}
 
+console.log(daClub(20, 23));
 
 /*
  * #12
@@ -247,7 +275,15 @@ console.log(spareChange(123));
  * Console.log your result.
 */ 
 
+function graduation(credits, thesis){
+  if(credits >= 120 || thesis === true){
+    return "Congratulations on a job well done."
+  }else{
+    return "See you in summer school."
+  }
+}
 
+console.log(graduation(100, false));
 
 /*
  * #13
@@ -261,7 +297,17 @@ console.log(spareChange(123));
  * Console.log your result.
 */ 
 
+function moneyTrain(speed){
+  if(speed < 50){
+    return "You are riding Honolulu's Rail."
+  }else if (speed < 100){
+    return "You are riding an Amtrak."
+  }else{
+    return "Now you ballin' in the Shinkansen!"
+  }
+}
 
+console.log(moneyTrain(46));
 /*
  * #14
  * Function - buyDoughnut
@@ -275,11 +321,21 @@ console.log(spareChange(123));
  * Invoke your function again.
  * Console.log budget and doughnutBought again.
 */ 
+var budget = 25
+var doughnutPrice = 5
+var doughnutBought = 0
 
+function buyDoughnut(){
+  budget -= doughnutPrice 
+  doughnutBought++
+} 
 
-
-
-
+buyDoughnut();
+console.log(budget);
+console.log(doughnutBought);
+buyDoughnut();
+console.log(budget);
+console.log(doughnutBought);
 /*
 For loops - A for loop checks a condition a specific number of times and allows us to execute a code block and evaluate a condition to determine if our loop should run again.
 
